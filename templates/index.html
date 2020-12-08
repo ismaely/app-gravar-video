@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="utf-8">
+  <title>App gravação de Video</title>
+
+  <link href="{% static 'css/materialize.min.css' %}" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="blue-grey lighten-5">
+
+  <div class="container">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="">Gravar video</a></li>
+          <li><a href=""> Listar Gravações</a></li>
+          <li><a href="">Canal Disponivel</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  {% block menu %} {% endblock %}
+
+
+  <footer class="page-footer blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Gravação de Video</h5>
+          <p class="grey-text text-lighten-4">Partilha o seu Momento</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+  <script src="{% static 'js/plugins/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'js/plugins/jquery/materialize.min.js'%}"></script>
+
+</body>
+
+</html>
